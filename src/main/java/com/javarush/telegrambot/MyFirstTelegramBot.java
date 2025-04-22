@@ -9,8 +9,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 public class MyFirstTelegramBot extends MultiSessionTelegramBot {
-    public static final String NAME = "JavaTelegramTestBot"; // TODO: добавьте имя бота в кавычках
-    public static final String TOKEN = "7956967482:AAEQeDn6NohdD905yg_raPuIdMtevsZKbHM"; //TODO: добавьте токен бота в кавычках
+    public static final String NAME = "JavaTelegramTestBot";
+    public static final String TOKEN = "7956967482:AAEQeDn6NohdD905yg_raPuIdMtevsZKbHM";
 
     public MyFirstTelegramBot() {
         super(NAME, TOKEN);
@@ -18,7 +18,7 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
 
     @Override
     public void onUpdateEventReceived(Update updateEvent) {
-        sendTextMessageAsync("Test HEllo!");
+        sendTextMessageAsync("Hi there!");
 
     }
 
